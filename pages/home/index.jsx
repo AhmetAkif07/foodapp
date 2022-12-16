@@ -1,9 +1,13 @@
 import React from 'react'
+import Slider from "react-slick";
 
-const Home = () => {
-  return (
-    <div className='text-red-600 font-rubik'>Home Page</div>
-  )
+const Home = ( ) => {
+    
+    return (
+        <div >
+
+        </div>
+    )
 }
 
 export default Home
