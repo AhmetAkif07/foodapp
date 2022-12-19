@@ -4,18 +4,21 @@ import { useState } from "react"
 import Search from "../ui/Search"
 import { GiHamburgerMenu } from "react-icons/Gi"
 import { AiOutlineClose } from "react-icons/Ai"
+import { useRouter } from "next/router"
 
 
 const Header = () => {
   const [IsSearchModal, setIsSearchModal] = useState(false);
   const [IsBurgerModal, setIsBurgerModal] = useState(false);
+  const router = useRouter();
+
   return (
-    <div className="h-[5.5rem] bg-secondary  ">
-      <div className="container mx-auto text-white flex justify-between h-full items-center">
-        <div><Logo /></div>
+    <div className={`h-[5rem] z-40 relative ${router.asPath === "/" ? "bg-transparent" : "bg-secondary"}`} >
+      <div className="container mx-auto text-white flex justify-between h-full items-center ">
+        <Logo />
         <nav 
-        className={`sm:static absolute sm:w-auto sm:h-auto 
-        top-0 left-0  h-full w-full sm:flex hidden
+        className={`sm:static absolute sm:w-auto sm:h-auto
+        top-0 left-0  h-screen w-full sm:flex hidden 
          sm:text-white sm:bg-transparent bg-white text-black 
          ${IsBurgerModal === true && " !grid place-content-center"}`}
          >
