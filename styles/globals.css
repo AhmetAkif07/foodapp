@@ -19,3 +19,10 @@ body {
   cursor-pointer hover:bg-orange-600 transition-all;
 }
 
+.slick-dots {
+  @apply !flex justify-start w-full;
+}
+
+.slick-dots .slick-active div{
+  @apply bg-primary;
+}
