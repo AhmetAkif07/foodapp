@@ -6,9 +6,9 @@ import { MdShoppingCart } from 'react-icons/md';
 
 const MenuItem = () => {
     return (
-        <div className=' bg-secondary rounded-[28px] '>
+        <div className=' bg-secondary rounded-[28px] sm:w-full w-80 '>
             <div className='w-full bg-[#f1f2f3] rounded-bl-[46px] p-6 relative items-center justify-center grid rounded-tr-3xl rounded-tl-3xl'>
-                <div className=' w-36 h-36 hover:scale-110 transition-all '>
+                <div className=' w-36 h-36 hover:scale-110 transition duration-700 '>
                     <Image src={itemImage} alt="" objectFit='cover'  />
                 </div>
             </div>

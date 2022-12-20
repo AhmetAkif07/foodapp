@@ -39,8 +39,8 @@ const Carousel = () => {
             <Slider {...settings}>
                 <div >
                     <div className='mt-48 text-white flex flex-col items-start gap-y-10' >
-                        <h1 className='font-normal font-sans text-4xl' >Fast Food Restaurant</h1>
-                        <p className='text-sm sm:w-2/5 w-full'>
+                        <h1 className='font-normal font-sans text-4xl' >Veysel</h1>
+                        <p className='text-lg sm:w-2/5 w-full'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Id vitae accusantium dolorem nam animi exercitationem,
                             dolorum explicabo veritatis rerum dicta fuga.
@@ -51,7 +51,7 @@ const Carousel = () => {
                 <div >
                     <div className='mt-48 text-white flex flex-col items-start gap-y-10' >
                         <h1 className='font-normal text-4xl' >Fast Food Restaurant</h1>
-                        <p className='text-sm sm:w-2/5 w-full'>
+                        <p className='text-lg sm:w-2/5 w-full'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Id vitae accusantium dolorem nam animi exercitationem,
                             dolorum explicabo veritatis rerum dicta fuga.

@@ -20,7 +20,7 @@ const Header = () => {
         className={`sm:static absolute sm:w-auto sm:h-auto
         top-0 left-0  h-screen w-full sm:flex hidden 
          sm:text-white sm:bg-transparent bg-white text-black 
-         ${IsBurgerModal === true && " !grid place-content-center"}`}
+         ${IsBurgerModal === true && " !grid place-content-center"}`} 
          >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
