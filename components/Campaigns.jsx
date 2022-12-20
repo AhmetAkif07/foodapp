@@ -6,7 +6,7 @@ const CampaignItem = () => {
     return (
         <div className='flex-1 rounded-md bg-secondary py-5 px-4 flex items-center gap-x-4 my-4'>
             <div className="md:w-44 md:h-44 w-36 h-36 relative
-               border-[5px] border-primary rounded-full flex overflow-hidden box-border after:box-border flex-wrap">
+               border-[3px] sm:border-[5px] border-primary rounded-[50%] hover:rounded-2xl duration-300 overflow-hidden box-border after:box-border flex-wrap">
                 <Image className='w-full transition-all align-middle border-none hover:scale-125 duration-700' src={picsOne} alt="" layout='fill' objectFit='cover' />
             </div>
             <div className='text-white'>

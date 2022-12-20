@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <div className={`h-[5rem] z-40 relative ${router.asPath === "/" ? "bg-transparent" : "bg-secondary"}`} >
       <div className="container mx-auto text-white flex justify-between h-full items-center ">
-        <Logo />
+        <Logo  />
         <nav 
         className={`sm:static absolute sm:w-auto sm:h-auto
         top-0 left-0  h-screen w-full sm:flex hidden 
@@ -42,7 +42,7 @@ const Header = () => {
          </button>
           )}
         </nav>
-        <div className="flex gap-x-5 items-center">
+        <div className="flex gap-x-5 items-center sm:mr-0 mr-3">
           <a className="" href="#">
             <FaUserAlt className="hover:text-primary transition-all" />
           </a>
