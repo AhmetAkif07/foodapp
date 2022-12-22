@@ -3,6 +3,7 @@ import Carousel from '../../components/ui/Carousel';
 import Campaigns from '../../components/Campaigns';
 import MenuWrapper from '../../components/menu/MenuWrapper'
 import About from '../../components/About'
+import Reservation from '../../components/Reservation';
 const Home = ( ) => {
     
     return (
@@ -11,6 +12,7 @@ const Home = ( ) => {
             <Campaigns />
             <MenuWrapper />
             <About />
+            <Reservation />
         </div>
     )
 }

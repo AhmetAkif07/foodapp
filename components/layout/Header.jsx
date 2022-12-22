@@ -48,7 +48,7 @@ const Header = () => {
           </a>
           <a href="#">
             <FaShoppingCart className="hover:text-primary transition-all" />
-          </a>
+          </a> 
           <a href="#">
             <button onClick={() => setIsSearchModal(true)} >
               <FaSearch className="hover:text-primary transition-all" />

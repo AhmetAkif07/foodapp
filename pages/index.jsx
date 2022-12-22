@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Home from "./home/index";
 import Header from '../components/layout/Header';
+import Input from '../components/form/Input';
+import Reservation from '../components/Reservation';
 
 export default function Index() {
   return (
@@ -12,6 +14,8 @@ export default function Index() {
       </Head>
       <Header />
       <Home />
+      
+     
     </div>
   )
 }
