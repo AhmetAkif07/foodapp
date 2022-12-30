@@ -24,16 +24,16 @@ const Header = () => {
          >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
-              <a href="">Home</a>
+              <a href="">AnaSayfa</a>
             </li>
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
-              <a href="">Menu</a>
+              <a href="">Menü</a>
             </li>
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
-              <a href="">About</a>
+              <a href="">Hakkımızda</a>
             </li>
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
-              <a href="">Book Table</a>
+              <a href="">Rezervasyon</a>
             </li>
           </ul>
           {IsBurgerModal && (
