@@ -10,7 +10,7 @@ const Search = ({ setIsSearchModal }) => {
             <div>
                 <OutsideClickHandler onOutsideClick={() => setIsSearchModal(false)}>
                     <div className='grid place-content-center w-full h-full'>
-                        <div className=" relative z-50 md:w-[600px] w-[370px] bg-white border-2 rounded-3xl p-10">
+                        <div className=" relative z-50 md:w-[600px] w-[270px] bg-white border-2 rounded-3xl p-10">
                             <button className='absolute top-4 right-4' onClick={() => setIsSearchModal(false)}>
                                 <AiOutlineClose size={20} className='hover:text-primary transition-all' />
                             </button>

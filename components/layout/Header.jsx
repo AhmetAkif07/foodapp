@@ -5,7 +5,7 @@ import Search from "../ui/Search"
 import { GiHamburgerMenu } from "react-icons/Gi"
 import { AiOutlineClose } from "react-icons/Ai"
 import { useRouter } from "next/router"
-
+import Link from "next/link"
 
 const Header = () => {
   const [IsSearchModal, setIsSearchModal] = useState(false);
@@ -24,16 +24,16 @@ const Header = () => {
          >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
-              <a href="">AnaSayfa</a>
+              <Link href="/">AnaSayfa</Link>
             </li>
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
-              <a href="">Menü</a>
+              <Link href="/menu">Menü</Link>
             </li>
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
-              <a href="">Hakkımızda</a>
+              <Link href="/about">Hakkımızda</Link>
             </li>
             <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
-              <a href="">Rezervasyon</a>
+              <Link href="/reservation">Rezervasyon</Link>
             </li>
           </ul>
           {IsBurgerModal && (
