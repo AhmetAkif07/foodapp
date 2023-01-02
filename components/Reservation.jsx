@@ -3,6 +3,7 @@ import Input from './form/Input'
 import Title from './ui/Title'
 import { Formik, useFormik } from 'formik';
 import { resolve } from 'styled-jsx/css';
+import { reservationScheme } from './schema/reservation';
 
 const Reservation = () => {
 
@@ -11,16 +12,16 @@ const Reservation = () => {
     actions.resetForm();
   };
 
-  const {values,handleSubmit,handleChange} = useFormik({
+  const {values, errors, touched, handleSubmit, handleChange, handleBlur} = useFormik({
     initialValues:{
       fullName:"",
       phoneNumber:"",
       email:"",
       person:"",
       date:"",
-      
     },
     onSubmit,
+    validationSchema: reservationScheme,
   });
   
   console.log(values);
@@ -32,6 +33,9 @@ const Reservation = () => {
       type:"text",
       placeholder:"Your Full Name",
       value: values.fullName,
+      errorMessage: errors.fullName,
+      touched:touched.fullName,
+
     },
     {
       id:2,
@@ -39,6 +43,8 @@ const Reservation = () => {
       type:"number",
       placeholder:"Your Phone Number",
       value: values.phoneNumber,
+      errorMessage: errors.phoneNumber,
+      touched:touched.phoneNumber,
     },
     {
       id:3,
@@ -46,6 +52,8 @@ const Reservation = () => {
       type:"email",
       placeholder:"Your Email",
       value: values.email,
+      errorMessage: errors.email,
+      touched:touched.email,
     },
     {
       id:4,
@@ -53,6 +61,8 @@ const Reservation = () => {
       type:"number",
       placeholder:"How Many Persons",
       value: values.person,
+      errorMessage: errors.person,
+      touched:touched.person,
     },
     {
       id:5,
@@ -60,6 +70,8 @@ const Reservation = () => {
       type:"datetime-local",
       placeholder:"gg.aa.yyyy",
       value: values.date,
+      errorMessage: errors.date,
+      touched:touched.date,
     }
     ]
     
@@ -71,7 +83,7 @@ const Reservation = () => {
         <form onSubmit={handleSubmit} className='lg:flex-1 sm:w-full w-[80%] sm:mb-0 mb-6 '>
           <div  className='flex flex-col gap-y-4 '>
             {inputs.map((input)=>(
-              <Input value={values} key={input.id} {...input} onChange={handleChange} />
+              <Input value={values} key={input.id} {...input} onChange={handleChange} onBlur={handleBlur}/>
             ))}
             
           </div>

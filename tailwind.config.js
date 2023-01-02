@@ -19,6 +19,7 @@ module.exports = {
       colors:{
         primary:"#ffbe33",
         secondary:"#222831",
+        denger:"danger",
       },
       fontFamily: {
         rubik: ["Rubik Vinyl","cursive"],
