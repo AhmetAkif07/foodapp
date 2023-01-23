@@ -1,6 +1,6 @@
 import Logo from "../ui/Logo"
 import { FaUserAlt, FaSearch, FaShoppingCart } from "react-icons/fa"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Search from "../ui/Search"
 import { GiHamburgerMenu } from "react-icons/Gi"
 import { AiOutlineClose } from "react-icons/Ai"
@@ -13,7 +13,7 @@ const Header = () => {
   const router = useRouter();
 
   return (
-    <div className={`h-[5rem] z-40 relative ${router.asPath === "/" ? "bg-transparent" : "bg-secondary"}`} >
+    <div className=" h-[5rem] sticky top-0 z-40 bg-secondary" >
       <div className="container mx-auto text-white flex justify-between h-full items-center ">
         <Logo  />
         <nav 
@@ -23,16 +23,16 @@ const Header = () => {
          ${IsBurgerModal === true && " !grid place-content-center"}`} 
          >
           <ul className="flex gap-x-2 sm:flex-row flex-col items-center">
-            <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
+            <li className={`px-[0.3rem] py-[1.25rem] font-Roboto sm:hover:bg-slate-700 hover:bg-none sm:rounded-lg rounded-none sm:transition-all transition-none cursor-pointer ${router.asPath==="/"?"text-white ":"opacity-50"} `}>
               <Link href="/">AnaSayfa</Link>
             </li>
-            <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
+            <li className={`px-[0.3rem] py-[1.25rem] font-Roboto sm:hover:bg-slate-700 sm:rounded-lg sm:transition-all cursor-pointer ${router.asPath==="/menu"?"text-white ":"opacity-50"}`}>
               <Link href="/menu">Menü</Link>
             </li>
-            <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
+            <li className={`px-[0.3rem] py-[1.25rem] font-Roboto sm:hover:bg-slate-700 sm:rounded-lg sm:transition-all cursor-pointer ${router.asPath==="/about"?"text-white ":"opacity-50"}`}>
               <Link href="/about">Hakkımızda</Link>
             </li>
-            <li className="px-[0.3rem] py-[1.25rem] font-Roboto uppercase hover:text-primary cursor-pointer">
+            <li className={`px-[0.3rem] py-[1.25rem] font-Roboto sm:hover:bg-slate-700 sm:rounded-lg sm:transition-all cursor-pointer ${router.asPath==="/reservation"?"text-white ":"opacity-50"}`}>
               <Link href="/reservation">Rezervasyon</Link>
             </li>
           </ul>

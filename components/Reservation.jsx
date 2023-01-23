@@ -24,7 +24,6 @@ const Reservation = () => {
     validationSchema: reservationScheme,
   });
   
-  console.log(values);
 
   const inputs = [
     {
@@ -78,7 +77,7 @@ const Reservation = () => {
 
   return (
     <div className='container mx-auto py-12'>
-          <Title classAdd="text-[40px] mb-10 sm:ml-0 ml-14">Rezervasyon</Title>
+          <Title classAdd="text-[40px] mb-10 sm:ml-0 ml-11">Rezervasyon</Title>
       <div className='flex sm:justify-between flex-wrap items-center justify-center  gap-x-10 '>
         <form onSubmit={handleSubmit} className='lg:flex-1 sm:w-full w-[80%] sm:mb-0 mb-6 '>
           <div  className='flex flex-col gap-y-4 '>

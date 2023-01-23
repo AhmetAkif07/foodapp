@@ -3,7 +3,6 @@ import React from 'react'
 const Input = (props) => {
   
   const {type,placeholder,errorMessage,touched,...inputProps} = props
-console.log(errorMessage);
   return (
     <div className='w-full'>
         <label className='relative block cursor-text w-full  '>
