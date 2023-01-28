@@ -2,11 +2,10 @@ import React from "react";
 import Input from "../../components/form/Input";
 import Title from "../../components/ui/Title";
 import { useFormik } from "formik";
-import { resolve } from "styled-jsx/css";
 import { loginScheme } from "../../components/schema/login";
 import { AiFillGithub } from "react-icons/ai";
 
-const login = () => {
+const Login = () => {
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 4000));
     actions.resetForm();
@@ -69,4 +68,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;
