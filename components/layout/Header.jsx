@@ -65,10 +65,10 @@ const Header = () => {
           )}
         </nav>
         <div className="flex gap-x-5 items-center sm:mr-0 mr-3">
-          <Link className="" href="/auth/Login">
+          <Link className="" href="/auth/login">
             <FaUserAlt className="hover:text-primary transition-all" />
           </Link>
-          <Link href="#">
+          <Link href="/cart">
             <FaShoppingCart className="hover:text-primary transition-all" />
           </Link>
           <a href="#">
