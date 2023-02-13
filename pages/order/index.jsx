@@ -1,65 +1,69 @@
-import React from "react";
-import Image from "next/legacy/image";
-import Title from "../../components/ui/Title";
+import Image from "next/image";
 
-const index = () => {
+const Order = () => {
   return (
-    <div className="min-h-[calc(100vh_-_120px)]">
-      <div className="justify-between flex items-center md:flex-row flex-col">
-        <div className="min-h-[calc(100vh_-_433px)] flex flex-1 items-center mx-3 p-10 overflow-x-auto w-full">
+      <div className="min-h-[calc(100vh_-_433px)] justify-between flex items-center flex-col p-10">
+        <div className=" flex flex-1 items-center mx-3 overflow-x-auto w-full">
           <table className="w-full text-sm text-center text-gray-500 min-w-[1000px]">
             <thead className="text-xs text-gray-400 uppercase bg-gray-700">
               <tr>
                 <th scope="col" className="py-3 px-6">
-                  PRODUCT
+                  ORDER ID
                 </th>
                 <th scope="col" className="py-3 px-6">
-                  EXTRAS
+                  CUSTOMER
                 </th>
                 <th scope="col" className="py-3 px-6">
-                  PRICE
+                  ADDRESS
                 </th>
                 <th scope="col" className="py-3 px-6">
-                  QUANTITY
+                  TOTAL
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-b bg-secondary border-gray-700 hover:bg-primary transition-all">
                 <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white flex items-center gap-x-1 justify-center">
-                  <Image alt="" src="/images/f1.png" width={50} height={50} />
-                  <span>Good Pizza</span>
+                  6107F559D
                 </td>
                 <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                  <span>mayonez, acı sos, ketçap,</span>
+                  <span>Ahmet Akif</span>
                 </td>
                 <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                  $20
+                  Antalya/Kontaaltı
                 </td>
                 <td className="py-4 px-6 font-medium whitespace-nowrap hover:text-white">
-                  1
+                  $18
                 </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <div className="bg-secondary min-h-[calc(100vh_-_100px)] flex flex-col justify-center text-white p-12 md:w-auto w-full items-center md:mb-0 mb-2 ">
-          <Title classAdd="text-[40px] ">CART TOTAL</Title>
-
-          <div className="mt-10">
-            <b>Subtotal: </b>$20 <br />
-            <b className="inline-block my-1">Discount: </b>$0.00 <br />
-            <b>Total: </b>$20
+        <div className="flex justify-between w-full p-10 bg-primary mt-4">
+          <div>
+            <Image src="/images/paid.png" alt="" width={40} height={40} />
           </div>
           <div>
-            <button className="btn-primary mt-4 md:w-auto w-52 ">
-              CHECK OUT NOW!
-            </button>
+            <Image src="/images/line.png" alt="" width={40} height={40} />
+          </div>
+          <div className="animate-pulse">
+            <Image src="/images/bake.png" alt="" width={40} height={40} />
+          </div>
+          <div>
+            <Image src="/images/line.png" alt="" width={40} height={40} />
+          </div>
+          <div>
+            <Image src="/images/bike.png" alt="" width={40} height={40} />
+          </div>
+          <div>
+            <Image src="/images/line.png" alt="" width={40} height={40} />
+          </div>
+          <div>
+            <Image src="/images/delivered.png" alt="" width={40} height={40} />
           </div>
         </div>
       </div>
-    </div>
   );
 };
 
-export default index;
+export default Order;
