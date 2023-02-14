@@ -65,7 +65,7 @@ const Register = () => {
 
   return (
     <div className="container mx-auto">
-      <form className="flex flex-col items-center my-20 md:w-1/2 w-full mx-auto" onSubmit={handleSubmit}>
+      <form className="flex flex-col items-center my-20 md:w-1/2 sm:w-full w-64  mx-auto" onSubmit={handleSubmit}>
         <Title classAdd="text-[40px] mb-6">Register</Title>
         <div className="flex flex-col gap-y-2 w-full">
           {inputs.map((input) => (
