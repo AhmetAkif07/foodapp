@@ -9,7 +9,7 @@ const Product = () => {
             Products
           </Title>
     <div className='items-center w-full mt-4'>
-        <table className="w-full text-sm text-center text-gray-500 min-w-[900px]">
+        <table className="w-full text-sm text-center text-gray-500 min-w-[900px] table-fixed">
             <thead className="text-xs text-gray-400 uppercase bg-gray-700">
               <tr>
                 <th scope="col" className="py-3 px-6">

@@ -7,7 +7,7 @@ const index = () => {
     <div className="min-h-[calc(100vh_-_120px)]">
       <div className="justify-between flex items-center md:flex-row flex-col">
         <div className="min-h-[calc(100vh_-_433px)] flex flex-1 items-center mx-3 p-10 overflow-x-auto w-full">
-          <table className="w-full text-sm text-center text-gray-500 min-w-[1000px]">
+          <table className="w-full text-sm text-center text-gray-500 min-w-[1000px] table-fixed">
             <thead className="text-xs text-gray-400 uppercase bg-gray-700">
               <tr>
                 <th scope="col" className="py-3 px-6">

@@ -5,9 +5,12 @@ import Title from "../../components/ui/Title";
 import { useFormik } from "formik";
 import { profileScheme } from "../../components/schema/profile";
 import Password from "../../components/profile/password";
-import Order from "../../components/profile/Order";
+import Order from "../../components/admin/Order";
 import Product from "../../components/admin/Product";
-import {BiCategoryAlt} from "react-icons/bi"
+import { BiCategoryAlt } from "react-icons/bi";
+import { MdInventory } from "react-icons/md";
+import Category from "../../components/admin/Category";
+import Footer from "../../components/admin/FooterEdit";
 
 const Admin = () => {
   const [tabs, setTabs] = useState(0);
@@ -109,8 +112,10 @@ const Admin = () => {
               tabs === 0 && "bg-primary text-white"
             }`}
           >
-            <i className="fa fa-home"></i>
-            <button className="ml-2">Products</button>
+            <div className="flex text-center justify-center">
+              <MdInventory className="mt-1 font-bold"/>
+              <button className="ml-2">Products</button>
+            </div>
           </li>
           <li
             onClick={() => setTabs(1)}
@@ -128,8 +133,8 @@ const Admin = () => {
             }`}
           >
             <div className="flex text-center justify-center">
-            <BiCategoryAlt className="mt-1 font-bold"/>
-            <button className="ml-2">Categories</button>
+              <BiCategoryAlt className="mt-1 font-bold" />
+              <button className="ml-2">Categories</button>
             </div>
           </li>
           <li
@@ -154,6 +159,8 @@ const Admin = () => {
       </div>
       {tabs === 0 && <Product />}
       {tabs === 1 && <Order />}
+      {tabs === 2 && <Category />}
+      {tabs === 3 && <Footer />}
     </div>
   );
 };

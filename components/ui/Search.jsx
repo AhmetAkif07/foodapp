@@ -6,7 +6,7 @@ import { AiOutlineClose } from "react-icons/Ai"
 
 const Search = ({ setIsSearchModal }) => {
     return (
-        <div className="fixed top-0 left-0 w-screen h-screen z-50  grid place-content-center after:opacity-60 after:bg-white after:absolute after:h-screen after:w-screen after:top-0 after:left-0 after: after:content-['']">
+        <div className="fixed top-0 left-0 w-screen h-screen z-50  grid place-content-center after:backdrop-blur  after:absolute after:h-screen after:w-screen after:left-0 after: after:content-[''] ">
             <div>
                 <OutsideClickHandler onOutsideClick={() => setIsSearchModal(false)}>
                     <div className='grid place-content-center w-full h-full'>
