@@ -20,8 +20,8 @@ const MenuItem = () => {
                 <p className='my-4'>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
                 <div className='flex justify-between items-center'>
                     <h1>$20</h1>
-                    <button className='btn-primary !w-10 !h-10 items-center !p-0 grid rounded-full place-content-center '>
-                        <MdShoppingCart size={15}  />
+                    <button className='btn-primary !w-10 !h-10 items-center !p-0 grid rounded-full place-content-center hover:!w-11 hover:!h-11'>
+                        <MdShoppingCart size={15}   />
                     </button>
                 </div>
             </div>
